@@ -1,0 +1,20 @@
+{
+  "name": "imdb-front",
+  "version": "1.0.0",
+  "description": "Simple Parcel Sandbox",
+  "license": "MIT",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "helper": "^0.0.13",
+    "imdb-scrapper": "^2.2.0",
+    "superagent": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.0",
+    "parcel-bundler": "^1.6.1"
+  }
+}
