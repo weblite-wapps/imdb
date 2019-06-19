@@ -3,7 +3,10 @@ import { setElementSrc } from './helper'
 
 W.setHooks({
   wappWillStart(start, error, { mode }) {
-    if (mode === 'customize') return
+    if (mode === 'customize') {
+      start()
+      return
+    }
 
     W.loadData().then(({ customize }) => {
       const id = (customize && customize.id) || ''
