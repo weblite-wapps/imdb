@@ -1,9 +1,17 @@
 import superagent from 'superagent'
-import {setElementSrc} from './helper'
+import { setElementSrc } from './helper'
 
-const id = 'tt0109686'
+W.setHooks({
+  wappWillStart(start, error, { mode }) {
+    if (mode === 'customize') return
 
-superagent
-  .get(`http://localhost:4000/id/${id}`)
-  .then(res => res.body)
-  .then(setElementSrc)
+    W.loadData().then(({ customize }) => {
+      const id = (customize && customize.id) || ''
+      superagent
+        .get(`https://wapp.weblite.me/imdb/id/${id}`)
+        .then(res => res.body)
+        .then(setElementSrc)
+        .then(start)
+    })
+  },
+})
