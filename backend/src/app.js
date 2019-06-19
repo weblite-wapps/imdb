@@ -24,4 +24,4 @@ app.use(cors({ origin: '*' }))
 app.use(bodyParser.json())
 app.use('/', router)
 
-app.listen(4000, () => console.log('Server Running! on port 4000'))
+app.listen(4190, () => console.log('Imdb server is running! on port 4190'))
