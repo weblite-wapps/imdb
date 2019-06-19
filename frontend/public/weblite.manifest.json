@@ -21,7 +21,7 @@
     ],
     "servIndexes": {
         "inline": "index",
-        "customize": "index",
+        "customize": "index.customize",
         "main": "index",
         "fullscreen": "index"
     },
