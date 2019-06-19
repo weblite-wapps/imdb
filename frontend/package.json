@@ -6,7 +6,7 @@
   "main": "index.html",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "parcel build index.html --public-url ./wapp/5d0a90af229bab56f5630b9d/"
+    "build": "parcel build index.html --public-url ./"
   },
   "dependencies": {
     "helper": "^0.0.13",
