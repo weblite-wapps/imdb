@@ -1,0 +1,29 @@
+{
+    "name": "imdb",
+    "id": "5d0a90af229bab56f5630b9d",
+    "searchable": true,
+    "instantiable": true,
+    "creator": false,
+    "inline": true,
+    "fullscreen": true,
+    "shareDB": false,
+    "width": 320,
+    "height": 400,
+    "customizeArray": [
+        {
+            "type": "textField",
+            "name": "id",
+            "title": "id",
+            "detail": {
+                "placeholder": ""
+            }
+        }
+    ],
+    "servIndexes": {
+        "inline": "index",
+        "customize": "index",
+        "main": "index",
+        "fullscreen": "index"
+    },
+    "version": "1.0.0"
+}
